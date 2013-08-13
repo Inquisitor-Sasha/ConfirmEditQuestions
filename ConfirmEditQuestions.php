@@ -9,6 +9,11 @@ $wgExtensionCredits[$type][] = array(
         'url' => "http://www.mediawiki.org/wiki/User:Inquisitor_Ehrenstein",
 );
 
+// Add you name (commented out) below if you have contributed to this.
+// You can also add attribution in a comment after the line
+// where you added a question.
+// Contributors:
+
 require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
