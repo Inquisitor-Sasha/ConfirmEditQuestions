@@ -17,16 +17,10 @@ $wgExtensionCredits[$type][] = array(
 require_once( "$IP/extensions/ConfirmEdit/QuestyCaptcha.php");
 $wgCaptchaClass = 'QuestyCaptcha';
 $arr = array (
-	"What is the Jewish name of God? (lowercase)" => "yahweh",
-	"What is the Christian name of God? (lowercase)" => "god",
-	"What is the Muslim name of God? (lowercase)" => "allah",
-	"What is the name for false science? (lowercase)" => "pseudoscience",
-	"What is the name for a belief in god(s)? (lowercase)" => "religion",
-	"Who discovered the theory of reletivity? (lowercase, last name)" => "einstein",
-	"Who discovered the theory of evolution? (lowercase, last name) => "darwin",
-	"Who discovered theories about the movements of large objects? (lowercase)" => "newton",
-	"What part of the body is in the logo? (lowercase, one word)" => "brain",
-	"What is the opposite of the first word in the name of the wiki? (lowercase)" => "irrational"
+	"What are the capital letters in the logo? (capitalize answer)" => "RW",
+	"What part of the body is in the logo? (lowecase)" => "brain",
+	"What color are the brackets in the logo? (lowecase)" => "black",
+	"What is the first word in the logo? (lowercase)" => "rational"
 );
 foreach ( $arr as $key => $value ) {
         $wgCaptchaQuestions[] = array( 'question' => $key, 'answer' => $value );
